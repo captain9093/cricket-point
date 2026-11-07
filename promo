@@ -70,15 +70,8 @@
         }
 
         @keyframes bgPulse {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.7;
-            }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
         }
 
         .container {
@@ -90,10 +83,7 @@
         }
 
         @keyframes slideUpFade {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .stream-header {
@@ -124,13 +114,8 @@
         }
 
         @keyframes shimmer {
-            0% {
-                left: -100%;
-            }
-
-            100% {
-                left: 100%;
-            }
+            0% { left: -100%; }
+            100% { left: 100%; }
         }
 
         .stream-header h1 {
@@ -167,20 +152,9 @@
         }
 
         @keyframes pulseRed {
-            0% {
-                transform: scale(0.95);
-                opacity: 0.7;
-            }
-
-            50% {
-                transform: scale(1.1);
-                opacity: 1;
-            }
-
-            100% {
-                transform: scale(0.95);
-                opacity: 0.7;
-            }
+            0% { transform: scale(0.95); opacity: 0.7; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.7; }
         }
 
         #player-container {
@@ -232,9 +206,7 @@
             transition: transform 0.4s ease;
         }
 
-        .info-card:hover::before {
-            transform: scaleX(1);
-        }
+        .info-card:hover::before { transform: scaleX(1); }
 
         .info-card:hover {
             transform: translateY(-8px);
@@ -255,9 +227,7 @@
             gap: 0.75rem;
         }
 
-        .info-card h2 i {
-            color: var(--accent-primary);
-        }
+        .info-card h2 i { color: var(--accent-primary); }
 
         .action-button {
             display: flex;
@@ -292,9 +262,7 @@
             transition: left 0.5s ease;
         }
 
-        .action-button:hover::before {
-            left: 100%;
-        }
+        .action-button:hover::before { left: 100%; }
 
         .action-button:hover {
             transform: translateY(-3px);
@@ -345,9 +313,7 @@
             transition: all 0.3s ease;
         }
 
-        .whatsapp-button i {
-            font-size: 1.25rem;
-        }
+        .whatsapp-button i { font-size: 1.25rem; }
 
         .whatsapp-button:hover {
             transform: translateY(-3px);
@@ -380,10 +346,7 @@
         }
 
         @keyframes popIn {
-            to {
-                opacity: 1;
-                transform: translate(-50%, -50%) scale(1);
-            }
+            to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
         }
 
         .telegram-popup h2 {
@@ -397,9 +360,7 @@
             font-weight: 700;
         }
 
-        .telegram-popup .fa-telegram {
-            color: #2AABEE;
-        }
+        .telegram-popup .fa-telegram { color: #2AABEE; }
 
         .telegram-popup p {
             color: var(--text-secondary);
@@ -464,9 +425,7 @@
         }
 
         @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
+            to { transform: rotate(360deg); }
         }
 
         .loading-text {
@@ -509,9 +468,7 @@
         }
 
         @media (max-width: 600px) {
-            body {
-                padding: 1rem 0.75rem;
-            }
+            body { padding: 1rem 0.75rem; }
 
             .stream-header {
                 flex-direction: column;
@@ -525,34 +482,12 @@
                 gap: 1rem;
             }
 
-            .telegram-popup {
-                padding: 2rem 1.5rem;
-            }
-
-            .info-card {
-                padding: 1.5rem;
-            }
-
-            .action-button {
-                padding: 1rem;
-                font-size: 0.9rem;
-            }
-
-            .brand-link {
-                font-size: 0.7rem;
-                padding: 6px 12px;
-            }
-
-            .promo-banner {
-                margin-top: 1rem;
-                border-radius: 12px;
-                max-width: 100%;
-            }
-
-            .whatsapp-button {
-                max-width: 100%;
-                font-size: 0.9rem;
-            }
+            .telegram-popup { padding: 2rem 1.5rem; }
+            .info-card { padding: 1.5rem; }
+            .action-button { padding: 1rem; font-size: 0.9rem; }
+            .brand-link { font-size: 0.7rem; padding: 6px 12px; }
+            .promo-banner { margin-top: 1rem; border-radius: 12px; max-width: 100%; }
+            .whatsapp-button { max-width: 100%; font-size: 0.9rem; }
         }
 
         .error-message {
